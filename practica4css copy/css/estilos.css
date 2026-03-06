@@ -8,5 +8,11 @@ h2{
     font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 2rem;
-    ;
+    
+}
+
+p{
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-size: 1rem;
 }
