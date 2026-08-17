@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to your calculator of the confidence</title>
+    <title>Calculadora de Confianza</title>
 </head>
 <body>
-<h1 id="texto">Welcome to your calculator of the confidence</h1>
+
 
 
     <script>
-    let n1, n2;
-    n1 = Number(prompt("Enter your first number:"));
-    n2 = Number(prompt("Enter your second number:"));
+let name = prompt("Escribe tu nombre:");
 
-    alert("The sum of your numbers is: " + (n1 + n2));
+    let n1, n2, n3;
+    n1 = Number(prompt("Escribe tu primera nota:"));
+    n2 = Number(prompt("Escribe tu segunda nota:"));
+    n3 = Number(prompt("Escribe tu tercera nota:"));
+
+    n1=n1*0.3
+    n2=n2*0.35
+    n3=n3*0.35
+    promedio=(n1+n2+n3)
+
+    document.write("<h1>Que onda " + name + "</h1>");
+    document.write("<p>El promedio de tus notas es: " + promedio + "</p>");
     </script>
 </body>
 </html>
