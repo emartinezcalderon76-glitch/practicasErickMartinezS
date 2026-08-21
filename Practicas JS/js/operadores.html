@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="puntaje">0</h1>
+    <button onclick="agregar()"> Agregar (1) punto</button>
+    <button onclick="duplicar()"> duplicar puntos</button>
+    <script>
+        let puntos = 0;
+        let marcador = document.getElementById("puntaje");
+         function agregar() {
+            puntos += 1
+            marcador.innerHTML = puntos;
+         }
+
+         function duplicar() {
+            puntos *= 2
+            marcador.innerHTML = puntos;
+         }
+    </script>
+
+</body>
+</html>
