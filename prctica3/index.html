@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .primario{
+            background-color: blue;
+        }
+
+        .secundario{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">Saludar</button>
+    
+    <div id="cajita" class="primario"> Hola mi gente</div>
+
+
+    <script>
+        let boton = document.getElementById("btn");
+        boton.addEventListener("click",saludar); 
+        function saludar(){
+            
+            alert("Hola☆*: .｡. o(≧▽≦)o .｡.:*☆ ");
+        }
+
+        let caja = document.getElementById("cajita");
+        caja.addEventListener("mouseover",cambiarColor);
+
+        function cambiarColor(){
+        document.getElementById("cajita").classList.toggle("primario")
+        document.getElementById("cajita").classList.toggle("secundario")    
+        }
+
+     
+
+    </script>
+</body>
+</html>
